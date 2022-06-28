@@ -27,6 +27,9 @@
 }
 
 mat-toolbar {
+  z-index: 10 !important;
+  position: fixed !important;
+  top: 0;
   height: 90px;
   padding: 1.5rem;
   display: flex;
@@ -51,4 +54,21 @@ mat-toolbar {
       font-size: 1rem;
     }
   }
+
+  .container {
+    position: absolute;
+    color: black;
+    top: 100px;
+    right: 0;
+  }
+}
+
+mat-sidenav-container {
+  overflow: overlay;
+  overflow-x: hidden;
+  // outline: solid 10px yellow;
+}
+mat-sidenav-content {
+  overflow: overlay;
+  overflow-x: hidden;
 }

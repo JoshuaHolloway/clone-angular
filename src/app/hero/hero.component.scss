@@ -1,9 +1,53 @@
-div {
+$dark: hsl(202, 59%, 26%);
+$light: hsl(207, 60%, 42%);
+
+$pad: 2rem;
+
+.hero {
+  position: relative;
   height: 100vh;
   width: 100vw;
-  background: red;
+
   background-image: url("/assets/img/7Q6A6691+crop_MozJPEG.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  .stars {
+    position: absolute;
+    height: 100px;
+    top: 30%;
+    left: $pad;
+    // transform: translateY(0%);
+  }
+
+  .overlay {
+    position: relative;
+    padding: $pad;
+    height: 100%;
+    width: 100%;
+    background: rgb(43, 112, 170);
+    background: linear-gradient(
+      270deg,
+      hsla(207, 60%, 42%, 0) 0%,
+      hsla(207, 60%, 42%, 0.8) 100%
+    );
+
+    .container {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+
+      h2 {
+        span:first-child {
+          font-size: 2rem;
+          display: block;
+        }
+        span:last-child {
+          font-size: 3.2rem;
+        }
+      }
+    }
+  }
 }
