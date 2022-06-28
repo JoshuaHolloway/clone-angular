@@ -13,9 +13,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { NavComponent } from './nav/nav.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, NavComponent],
+  declarations: [AppComponent, HomeComponent, NavComponent, HeroComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
