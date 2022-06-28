@@ -11,10 +11,10 @@
   font-size: 2rem;
 }
 
-.fuck {
-  height: 100vh;
-  background: darkorange;
-}
-mat-toolbar > img {
-  height: 100px;
+mat-toolbar {
+  padding: 1rem;
+
+  > img {
+    height: 100%;
+  }
 }
