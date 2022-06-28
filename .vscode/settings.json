@@ -1,0 +1,42 @@
+// Workspace settings
+{
+  // https://stackoverflow.com/a/36193178
+  // The following will hide the js and map files in the editor
+  "files.exclude": {
+    // "**/*.ts": true,
+    "**/*.spec.ts": true,
+    // "src/assets": true,
+    "src/environments": true,
+    "src/favicon.ico": true,
+    "src/index.html": true,
+    "src/main.ts": true,
+    "src/polyfills.ts": true,
+    "src/test.ts": true,
+    // "src/styles.scss": true,
+    "src/app/app.component.scss": true,
+    "src/app/app-routing.module.ts": true,
+    "src/app/app.component.spec.ts": true,
+    "src/app/app.component.ts": true,
+    // "src/app/app.module.ts": true,
+    "angular.json": true,
+    "karma.conf.js": true,
+    "node_modules/": true,
+    ".browserslistrc": true,
+    ".editorconfig": true,
+    "package-lock.json": true,
+    "README.md": true,
+    "tsconfig.app.json": true,
+    "tsconfig.spec.json": true,
+    "tsconfig.json": true,
+    "netlify.toml": true,
+    ".vscode/extensions.json": true,
+    ".vscode/launch.json": true,
+    ".vscode/tasks.json": true,
+    ".angular": true,
+    ".netlify": true
+    // "package.json": true,
+  }
+  // https://youtu.be/WgUftBzky1U
+  // https://youtu.be/WvUS7H5uGAo
+  // https://stackoverflow.com/a/71776204
+}

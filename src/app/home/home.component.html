@@ -1,0 +1,38 @@
+<mat-toolbar color="primary">
+  <img src="assets/img/logo.png" />
+  <span>Josh</span>
+</mat-toolbar>
+
+<button [disabled]="clicked" (click)="handleClick()">home works!</button>
+<p>clicked: {{ clicked }}</p>
+
+<div *ngIf="clicked">ngIf</div>
+
+<ul *ngFor="let elem of elems">
+  <li [ngClass]="elem.color">
+    {{ elem.name }}
+  </li>
+</ul>
+
+<ul *ngFor="let elem of elems">
+  <li
+    [ngClass]="{
+      small: elem.size === 'small',
+      big: elem.size === 'big'
+    }"
+  >
+    {{ elem.name }}
+  </li>
+</ul>
+
+<hr />
+
+<button mat-button color="accent">Button</button>
+<button mat-raised-button>Button</button>
+<button mat-icon-button>Button</button>
+<button mat-fab>Button</button>
+<button mat-mini-fab>Button</button>
+<button mat-stroked-button>Button</button>
+<button mat-flat-button>Button</button>
+
+<div class="fuck"></div>
