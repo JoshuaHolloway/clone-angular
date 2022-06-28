@@ -19,22 +19,15 @@
   z-index: 1;
 }
 
-// @media (min-width: 768px) {
-//   .sidenav {
-//     display: none;
-//   }
-// }
-
-.hidden {
-  display: none;
-}
-
 mat-toolbar {
+  $nav-h: 90px;
+  $pad: 1.5rem;
+
   z-index: 10;
   position: fixed;
   top: 0;
-  height: 90px;
-  padding: 1.5rem;
+  height: $nav-h;
+  padding: $pad;
   display: flex;
   justify-content: space-between;
 
@@ -48,6 +41,7 @@ mat-toolbar {
     padding-left: 0;
 
     li {
+      color: black;
       margin: 0 1rem;
       cursor: pointer;
       font-size: 1rem;
@@ -56,7 +50,7 @@ mat-toolbar {
       transition: all 0.2s ease;
       &:hover {
         color: v.$red;
-        border-bottom: solid 2px v.$red;
+        border-bottom: solid 3px v.$red;
       }
     }
   }
@@ -64,8 +58,18 @@ mat-toolbar {
   .container {
     position: absolute;
     color: black;
-    top: 100px;
-    right: 0;
+    top: calc(#{$nav-h} + #{$pad});
+    right: $pad;
+    display: flex;
+    justify-content: space-between;
+
+    width: 250px;
+
+    .instagram {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 
@@ -82,4 +86,8 @@ mat-sidenav-content {
   @media (min-width: #{b.$desktop}) {
     display: none;
   }
+}
+
+.hidden {
+  display: none;
 }

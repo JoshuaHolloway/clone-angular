@@ -19,7 +19,7 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar>
       <img src="assets/img/logo.png" />
 
       <div *ngIf="!(isHandset$ | async)">
@@ -45,13 +45,16 @@
 
       <div class="container">
         <button mat-raised-button color="secondary">(405) 310-0006</button>
-        <button mat-mini-fab>
+        <button mat-mini-fab color="secondary">
           <mat-icon aria-hidden="false" aria-label="Example home icon"
             >facebook</mat-icon
           >
         </button>
-        <button mat-mini-fab>
-          <mat-icon aria-hidden="false" aria-label="Example home icon"
+        <button mat-mini-fab color="secondary">
+          <mat-icon
+            class="instagram"
+            aria-hidden="false"
+            aria-label="Example home icon"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -68,6 +71,6 @@
       </div>
     </mat-toolbar>
 
-    <ng-content class="x"></ng-content>
+    <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
