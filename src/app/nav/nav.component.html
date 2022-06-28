@@ -24,20 +24,21 @@
 
       <div *ngIf="!(isHandset$ | async)">
         <ul>
-          <li>RESIDENTIAL SYSTEMS</li>
-          <li>COMMERCIAL SYSTEMS</li>
+          <li class="show-desktop-only">RESIDENTIAL SYSTEMS</li>
+          <li class="show-desktop-only">COMMERCIAL SYSTEMS</li>
           <li>HOW WE WORK</li>
           <li>ABOUT</li>
           <li>CONTACT US</li>
         </ul>
       </div>
 
+      <!-- *ngIf="isHandset$ | async" -->
       <button
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async"
+        class="hide-desktop-only"
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
