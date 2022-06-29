@@ -22,14 +22,6 @@ $pad: 2rem;
     font-style: italic;
   }
 
-  .stars {
-    position: absolute;
-    height: 100px;
-    top: 30%;
-    left: $pad;
-    // transform: translateY(0%);
-  }
-
   .overlay {
     position: relative;
     padding: $pad;
@@ -48,14 +40,24 @@ $pad: 2rem;
       transform: translateY(-50%);
       color: white;
 
+      .stars {
+        height: 10vw;
+        max-height: 80px;
+        opacity: 0.4;
+        margin-bottom: 1rem;
+      }
+
       h2 {
+        line-height: 0.95;
         span:first-child {
           font-size: 2rem;
           display: block;
+          margin-bottom: 0.6rem;
         }
         span:last-child {
           font-size: 3.2rem;
         }
+        margin-bottom: 1.1rem;
       }
     }
   }
