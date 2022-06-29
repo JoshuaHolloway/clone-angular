@@ -1,3 +1,5 @@
+@use "src/assets/css/variables" as v;
+
 $dark: hsl(202, 59%, 26%);
 $light: hsl(207, 60%, 42%);
 
@@ -12,6 +14,13 @@ $pad: 2rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  p.quote {
+    color: white;
+    top: calc(#{v.$nav-h} + #{v.$gutter-w});
+    position: absolute;
+    font-style: italic;
+  }
 
   .stars {
     position: absolute;

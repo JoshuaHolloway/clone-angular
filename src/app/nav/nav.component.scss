@@ -20,14 +20,11 @@
 }
 
 mat-toolbar {
-  $nav-h: 90px;
-  $pad: 1.5rem;
-
   z-index: 10;
   position: fixed;
   top: 0;
-  height: $nav-h;
-  padding: $pad;
+  height: v.$nav-h;
+  padding: v.$gutter-w;
   display: flex;
   justify-content: space-between;
 
@@ -58,8 +55,8 @@ mat-toolbar {
   .container {
     position: absolute;
     color: black;
-    top: calc(#{$nav-h} + #{$pad});
-    right: $pad;
+    top: calc(#{v.$nav-h} + #{v.$gutter-w});
+    right: v.$gutter-w;
     display: flex;
     justify-content: space-between;
 

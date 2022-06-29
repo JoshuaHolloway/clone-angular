@@ -8,7 +8,6 @@
     // "src/assets": true,
     "src/environments": true,
     "src/favicon.ico": true,
-    "src/index.html": true,
     "src/main.ts": true,
     "src/polyfills.ts": true,
     "src/test.ts": true,
@@ -33,8 +32,9 @@
     ".vscode/launch.json": true,
     ".vscode/tasks.json": true,
     ".angular": true,
-    ".netlify": true
-    // "dist": true
+    ".netlify": true,
+    "dist": true,
+    "src/index.html": true
     // "package.json": true,
   }
   // https://youtu.be/WgUftBzky1U
