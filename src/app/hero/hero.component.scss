@@ -30,8 +30,8 @@ $pad: 2rem;
     background: rgb(43, 112, 170);
     background: linear-gradient(
       270deg,
-      hsla(207, 60%, 42%, 0) 0%,
-      hsla(207, 60%, 42%, 0.8) 100%
+      hsla(207, 60%, 42%, 0.25) 0%,
+      hsla(207, 60%, 42%, 0.75) 60%
     );
 
     .container {
@@ -42,9 +42,9 @@ $pad: 2rem;
 
       .stars {
         height: 10vw;
-        max-height: 80px;
-        opacity: 0.4;
-        margin-bottom: 1rem;
+        max-height: 60px;
+        opacity: 0.33;
+        margin-bottom: 0.5rem;
       }
 
       h2 {
@@ -59,6 +59,14 @@ $pad: 2rem;
         }
         margin-bottom: 1.1rem;
       }
+    }
+
+    .img-bottom {
+      height: 9%;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   }
 }
