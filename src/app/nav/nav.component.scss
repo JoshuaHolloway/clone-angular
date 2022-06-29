@@ -48,9 +48,13 @@ mat-sidenav {
   }
 }
 
+$border-bottom-h: 2px;
+
 mat-toolbar {
   z-index: 1;
   position: fixed;
+  background: white;
+  border-bottom: $border-bottom-h solid v.$blue;
   top: 0;
   height: v.$nav-h;
   padding: v.$gutter-w;
@@ -76,6 +80,13 @@ mat-toolbar {
         padding: 0.5rem 0;
       }
     }
+  }
+
+  .img-right {
+    height: calc(#{v.$nav-h - #{$border-bottom-h}});
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
   .container {
