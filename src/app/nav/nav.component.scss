@@ -13,14 +13,14 @@
   background: inherit;
 }
 
-.mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
+// .mat-toolbar.mat-primary {
+//   position: sticky;
+//   top: 0;
+//   z-index: 1;
+// }
 
 mat-toolbar {
-  z-index: 10;
+  z-index: 1;
   position: fixed;
   top: 0;
   height: v.$nav-h;
@@ -66,6 +66,11 @@ mat-toolbar {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    // hide on mobile
+    @media (max-width: #{b.$desktop}) {
+      display: none;
     }
   }
 }

@@ -2,13 +2,13 @@
   <mat-sidenav
     #drawer
     class="sidenav"
-    [ngClass]="{ hidden: !(isHandset$ | async) }"
+    [ngClass]="{ hidden: !(isHandset$ | async), josh: true }"
     fixedInViewport="false"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false"
   >
-    <mat-toolbar>Menu</mat-toolbar>
+    <!-- <mat-toolbar>Menu</mat-toolbar> -->
     <mat-nav-list>
       <a mat-list-item href="#">RESIDENTIAL SYSTEMS</a>
       <a mat-list-item href="#">COMMERCIAL SYSTEMS</a>
@@ -32,18 +32,18 @@
         </ul>
       </div>
 
-      <!-- *ngIf="isHandset$ | async" -->
+      <!-- class="hide-desktop-only" -->
       <button
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        class="hide-desktop-only"
+        *ngIf="isHandset$ | async"
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
 
-      <div class="container">
+      <div class="show-desktop-only container">
         <button mat-raised-button color="secondary">(405) 310-0006</button>
         <button mat-mini-fab color="secondary">
           <mat-icon aria-hidden="false" aria-label="Example home icon"
