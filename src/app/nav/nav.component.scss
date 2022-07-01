@@ -57,7 +57,7 @@ mat-toolbar {
   border-bottom: $border-bottom-h solid v.$blue;
   top: 0;
   height: v.$nav-h;
-  padding: v.$gutter-w;
+  padding: v.$gutter-w-hero;
   display: flex;
   justify-content: space-between;
 
@@ -92,8 +92,8 @@ mat-toolbar {
   .container {
     position: absolute;
     color: black;
-    top: calc(#{v.$nav-h} + #{v.$gutter-w});
-    right: v.$gutter-w;
+    top: calc(#{v.$nav-h} + #{v.$gutter-w-hero});
+    right: v.$gutter-w-hero;
     display: flex;
     justify-content: space-between;
 

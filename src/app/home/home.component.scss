@@ -10,3 +10,14 @@
 .big {
   font-size: 2rem;
 }
+
+div {
+  // height: 100vh;
+  padding: 2rem;
+  background: white;
+
+  .signature,
+  .signature-name {
+    display: block;
+  }
+}

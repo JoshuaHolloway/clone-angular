@@ -14,9 +14,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { NavComponent } from './nav/nav.component';
 import { HeroComponent } from './hero/hero.component';
+import { SubHeroComponent } from './sub-hero/sub-hero.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, NavComponent, HeroComponent],
+  declarations: [AppComponent, HomeComponent, NavComponent, HeroComponent, SubHeroComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
